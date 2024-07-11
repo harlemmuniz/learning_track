@@ -1,0 +1,5 @@
+{
+    "kind": "BlobStorageContainer",
+    "name": "silver",
+    "type": "Microsoft.Storage/storageContainer"
+}

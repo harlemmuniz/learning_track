@@ -1,0 +1,75 @@
+{
+    "sku": {
+        "name": "Standard_LRS",
+        "tier": "Standard"
+    },
+    "kind": "BlobStorage",
+    "id": "/subscriptions/6d11b162-2fd2-49f3-be9e-0b18dea323be/resourceGroups/RG-DATASCIENCE/providers/Microsoft.Storage/storageAccounts/datalakelab",
+    "name": "datalaketemplab",
+    "type": "Microsoft.Storage/storageAccounts",
+    "location": "brazilsouth",
+    "properties": {
+        "defaultToOAuthAuthentication": false,
+        "publicNetworkAccess": "Enabled",
+        "keyCreationTime": {
+            "key1": "2024-01-31T19:09:08.2682073Z",
+            "key2": "2024-01-31T19:13:04.4008357Z"
+        },
+        "privateEndpointConnections": [],
+        "isLocalUserEnabled": true,
+        "isSftpEnabled": true,
+        "minimumTlsVersion": "TLS1_0",
+        "allowBlobPublicAccess": true,
+        "allowSharedKeyAccess": true,
+        "isHnsEnabled": true,
+        "networkAcls": {
+            "resourceAccessRules": [
+                {
+                    "tenantId": "ffc0be44-315f-4479-b12f-56afe6ededd6",
+                    "resourceId": "/subscriptions/6d11b162-2fd2-49f3-be9e-0b18dea323be/providers/Microsoft.Security/datascanners/StorageDataScanner"
+                }
+            ],
+            "bypass": "None",
+            "virtualNetworkRules": [
+                {
+                    "id": "/subscriptions/6d11b162-2fd2-49f3-be9e-0b18dea323be/resourceGroups/RG-Network/providers/Microsoft.Network/virtualNetworks/VNET-LAB/subnets/private-paas",
+                    "action": "Allow",
+                    "state": "Succeeded"
+                }
+            ],
+            "ipRules": [
+                {
+                    "value": "187.18.16.0/20",
+                    "action": "Allow"
+                }
+            ],
+            "defaultAction": "Allow"
+        },
+        "supportsHttpsTrafficOnly": true,
+        "encryption": {
+            "services": {
+                "file": {
+                    "keyType": "Account",
+                    "enabled": true,
+                    "lastEnabledTime": "2020-02-18T17:48:51.5503291Z"
+                },
+                "blob": {
+                    "keyType": "Account",
+                    "enabled": true,
+                    "lastEnabledTime": "2020-02-18T17:48:51.5503291Z"
+                }
+            },
+            "keySource": "Microsoft.Storage"
+        },
+        "accessTier": "Cool",
+        "provisioningState": "Succeeded",
+        "creationTime": "2020-02-18T17:48:51.4721937Z",
+        "primaryEndpoints": {
+            "dfs": "https://datalakelab.dfs.core.windows.net/",
+            "blob": "https://datalakelab.blob.core.windows.net/",
+            "table": "https://datalakelab.table.core.windows.net/"
+        },
+        "primaryLocation": "brazilsouth",
+        "statusOfPrimary": "available"
+    }
+}
